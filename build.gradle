@@ -36,6 +36,7 @@ dependencies {
 	compile('org.webjars:nprogress:0.2.0')
 	compile('org.webjars:fastclick:1.0.6')
 	compile('org.webjars:webjars-locator:0.34')
+	compile('nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.3.0')
 	runtime('org.springframework.boot:spring-boot-devtools')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

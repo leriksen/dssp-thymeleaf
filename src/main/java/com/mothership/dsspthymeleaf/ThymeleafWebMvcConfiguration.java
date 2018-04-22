@@ -1,5 +1,6 @@
 package com.mothership.dsspthymeleaf;
 
+import nz.net.ultraq.thymeleaf.LayoutDialect;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
@@ -24,7 +25,7 @@ public class ThymeleafWebMvcConfiguration implements WebMvcConfigurer {
     public ISpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
-
+        templateEngine.setDialect(new LayoutDialect());
         return templateEngine;
     }
 
